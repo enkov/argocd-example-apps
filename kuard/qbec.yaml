@@ -1,0 +1,48 @@
+---
+apiVersion: qbec.io/v1alpha1
+kind: App
+metadata:
+  name: kuard
+spec:
+  libPaths:
+    - ../libs/vendor
+  environments:
+    default:
+      defaultNamespace: default
+      server: https://172.31.75.1:6443
+    kubesolo:
+      defaultNamespace: default
+      server: https://172.31.75.161:6443
+    awstest:
+      defaultNamespace: default
+      server: https://172.31.75.1:6443
+    losolo:
+      defaultNamespace: default
+      server: https://172.31.71.3:6443
+    losolo2:
+      defaultNamespace: default
+      server: https://172.31.71.13:6443
+    losolo3:
+      defaultNamespace: default
+      server: https://172.31.71.23:6443
+    stsolo:
+      defaultNamespace: default
+      server: https://172.31.71.33:6443
+    awsstaging:
+      defaultNamespace: default
+      server: https://172.29.64.42:6443
+    awsprod:
+      defaultNamespace: default
+      server: https://172.29.128.143:6443
+    demosolo:
+      defaultNamespace: default
+      server: https://172.29.32.158:6443
+    ycstaging:
+      defaultNamespace: default
+      server: https://10.128.0.29:6443
+    ycprod:
+      defaultNamespace: default
+      server: https://10.128.0.16:6443
+    alidemo:
+      defaultNamespace: default
+      server: https://192.168.2.220:6443
