@@ -15,7 +15,7 @@ local params = p.kuard;
       },
     },
     spec: {
-      replicas: 1,
+      replicas: 2,
       selector: {
         matchLabels: {
           app: 'kuard',
